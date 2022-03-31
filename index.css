@@ -202,10 +202,10 @@ label {
 .greeting {
   width: 536px;
   height: 118px;
-  font: normal normal 900 30px/40px Bauhaus Hv BT;
+  font-weight: 900;
   background-color: white;
   border-radius: 10px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #8E53F0;
   padding: 2.5rem 2rem;
   box-sizing: border-box;
