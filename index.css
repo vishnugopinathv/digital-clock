@@ -39,7 +39,7 @@ main {
   width: 536px;
   height: 130px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   padding: 1rem;
   box-sizing: border-box;
