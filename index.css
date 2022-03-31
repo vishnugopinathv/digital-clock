@@ -149,7 +149,7 @@ select {
   background-color: rgb(255, 255, 255, 0.23);
   width: 536px;
   height: 77px;
-  font-family: "Bauhaus Hv BT";
+  font: normal normal 900 30px/40px Bauhaus Hv BT;
   color: white;
   border-radius: 10px;
   margin-top: 1rem;
@@ -202,7 +202,7 @@ label {
 .greeting {
   width: 536px;
   height: 118px;
-  font-family: 'Bauhaus Hv BT';
+  font: normal normal 900 30px/40px Bauhaus Hv BT;
   background-color: white;
   border-radius: 10px;
   font-size: 1.8rem;
