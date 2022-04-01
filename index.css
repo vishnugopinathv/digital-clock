@@ -52,7 +52,7 @@ main {
   width: 68rem;
 }
 .container {
-  margin: 2rem 2rem;
+  margin: 2rem ;
 }
 .digital-clock {
   position: relative;
@@ -149,7 +149,7 @@ select {
   background-color: rgb(255, 255, 255, 0.23);
   width: 536px;
   height: 77px;
-  font: normal normal 900 30px/40px Bauhaus Hv BT;
+  font-family: "Baumans";
   color: white;
   border-radius: 10px;
   margin-top: 1rem;
@@ -203,9 +203,10 @@ label {
   width: 536px;
   height: 118px;
   font-weight: 900;
+  font-family: "Baumans";
   background-color: white;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: #8E53F0;
   padding: 2.5rem 2rem;
   box-sizing: border-box;
@@ -227,9 +228,6 @@ label {
   .sub-container1,.sub-container2 {
     flex-direction: column;
   }
-  main{
-    margin: 1rem;
-  }
   .sub-container1{
     width: 536px;
   }
@@ -239,6 +237,7 @@ label {
     padding-bottom: 3rem;
   }
   .container{
+    width: 90%;
     max-width:560px;
   }
   .alarmtime{
@@ -259,7 +258,7 @@ label {
   }
   .greeting{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem;
   }
   .goodmorning h1{
@@ -267,10 +266,6 @@ label {
     font-size: 2.75rem;
     padding:1rem;
   } 
-   .container{
-    width: 95vw;
-    margin-right: 1rem;
-  }
 }
 @media (max-width:650px){
   .bg-3>p{
