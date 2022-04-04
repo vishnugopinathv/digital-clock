@@ -76,7 +76,7 @@ main {
   font-size: 2.5rem;
   position: absolute;
   top: 2.5rem;
-  left: 5rem;
+  left: 5.5rem;
 }
 .time:nth-last-child(1)::after,.time:nth-last-child(2)::after,.dropdown:nth-last-child(1)::before{
   display: none;
@@ -290,6 +290,7 @@ label {
   .bg-3{
     gap: 2rem;
     height: 10rem;
+    justify-content: space-between;
   }
   .bg-2{
     top: 4rem;
@@ -298,7 +299,7 @@ label {
     top: 5rem;
   }
   .time::after{
-    left: 7rem;
+    left: 6.5rem;
     top: 3.5rem;
   }
 }
