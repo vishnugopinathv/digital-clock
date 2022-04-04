@@ -68,6 +68,7 @@ main {
   font-family: "Barlow";
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 .time::after{
   content: ":";
@@ -104,6 +105,7 @@ main {
 }
 .am {
   background-image: url("./AM_svg.svg");
+  background-size: contain;
   color: white;
   font-size: 1.25rem;
   padding-top: 1rem;
@@ -236,8 +238,11 @@ label {
     width: 536px;
     padding-bottom: 3rem;
   }
+  .timeset{
+    margin-top: 2rem;
+  }
   .container{
-    width: 90%;
+    width: 100%;
     max-width:560px;
   }
   .alarmtime{
@@ -266,15 +271,34 @@ label {
     font-size: 2.75rem;
     padding:1rem;
   } 
+  .clock-logo img{
+    width: 60%;
+  }
 }
 @media (max-width:650px){
+    .sub-container1,.sub-container2{
+      margin:0 1rem;
+    }
   .bg-3>p{
     display: none;
   }
+  .time{
+    height: 130px;
+    width: 120px;
+    padding: 2rem;
+  }
   .bg-3{
     gap: 2rem;
+    height: 10rem;
+  }
+  .bg-2{
+    top: 4rem;
+  }
+  .bg-1{
+    top: 5rem;
   }
   .time::after{
-    left: 5.5rem;
+    left: 7rem;
+    top: 3.25rem;
   }
 }
