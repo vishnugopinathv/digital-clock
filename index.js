@@ -9,6 +9,11 @@ let hours=document.getElementsByClassName("hour");
 let minutes=document.getElementsByClassName("minute");
 let seconds=document.getElementsByClassName("second");
 let am_pm=document.getElementsByClassName("am_pm");
+let timing=document.getElementsByClassName("timing");
+timing[0].innerText=document.getElementById("wakeup").value;
+timing[1].innerText=document.getElementById("lunch").value;
+timing[2].innerText=document.getElementById("nap").value;
+timing[3].innerText=document.getElementById("night").value;
 if(time.getHours()>12){
     hour=hour-12;
     amorpm="PM";
