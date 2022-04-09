@@ -59,9 +59,6 @@ if((hour>=8 && hour<12) && (amorpm==="PM")){
     message.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
     greeting.innerText="GOOD NIGHT!!";
 }
-
-
-
 hours[0].innerText=hour;
 minutes[0].innerText=minute;
 seconds[0].innerText=second;
