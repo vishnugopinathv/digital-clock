@@ -20,18 +20,18 @@
             <div class="bg-3 bg">
               <p>TIME</p>
               <div class="time">
-                <h1>10</h1>
+                <h1 class="hour">10</h1>
                 <p>hours</p>
               </div>
               <div class="time">
-                <h1>00</h1>
+                <h1 class="minute">00</h1>
                 <p>mins</p>
               </div>
               <div class="time">
-                <h1>01</h1>
+                <h1 class="second">01</h1>
                 <p>secs</p>
               </div>
-              <div class="time am"><h1>AM</h1></div>
+              <div class="time am"><h1 class="am_pm">AM</h1></div>
             </div>
             <div class="bg-1 bg"></div>
             <div class="bg-2 bg"></div>
@@ -44,6 +44,7 @@
                 <img src="./wake_up.svg" alt="" />
                 <label for="">set wakeup time</label>
                 <select name="" id="">
+                  <option value="Default">Default</option>
                   <option value="12AM-1AM">12AM-1AM</option>
                   <option value="1AM-2AM">1AM-2AM</option>
                   <option value="2AM-3AM">2AM-3AM</option>
@@ -73,6 +74,7 @@
               <div class="dropdown"><img src="./lunch_time.svg" alt="" />
                 <label for="">set lunch time</label>
                 <select name="" id="">
+                  <option value="Default">Default</option>
                   <option value="12AM-1AM">12AM-1AM</option>
                   <option value="1AM-2AM">1AM-2AM</option>
                   <option value="2AM-3AM">2AM-3AM</option>
@@ -101,6 +103,7 @@
               <div class="dropdown"><img src="./nap_time.svg" alt="" />
                 <label for="">Set nap time</label>
                 <select name="" id="">
+                  <option value="Default">Default</option>
                   <option value="12AM-1AM">12AM-1AM</option>
                   <option value="1AM-2AM">1AM-2AM</option>
                   <option value="2AM-3AM">2AM-3AM</option>
@@ -129,6 +132,7 @@
               <div class="dropdown"><img src="./nightsvg.svg" alt="" />
                 <label for="">set night time</label>
                 <select name="" id="">
+                  <option value="Default">Default</option>
                   <option value="12AM-1AM">12AM-1AM</option>
                   <option value="1AM-2AM">1AM-2AM</option>
                   <option value="2AM-3AM">2AM-3AM</option>
@@ -161,6 +165,7 @@
             <div class="alarmtime">
               <div class="set-alarm">
                 <span>Set Alarm</span>
+                <span>Party time!</span>
               </div>
               <div class="timings">
                 <p>Wakeup time: 10AM-11AM</p>
@@ -181,5 +186,6 @@
         </div>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

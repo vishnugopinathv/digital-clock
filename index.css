@@ -184,6 +184,25 @@ label {
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+.set-alarm span:nth-child(2){
+  display: none;
+}
+.set-alarm:hover span:nth-child(2){
+  display: inline-block;
+}
+.set-alarm:hover{
+  background:linear-gradient(
+    to left,
+    #6e54ec 0%,
+    #cb52f8 40%,
+    #fc5eff 81%,
+    #f1a7c5 100%
+  );;
+}
+.set-alarm:hover span:nth-child(1){
+  display: none;
 }
 .timings {
   width: 223px;
