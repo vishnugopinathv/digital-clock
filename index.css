@@ -156,6 +156,7 @@ select {
   color: white;
   border-radius: 10px;
   margin-top: 1rem;
+  text-align: center;
 }
 .goodmorning h1 {
   padding: 1.3rem;
@@ -232,6 +233,7 @@ label {
   color: #8E53F0;
   padding: 2rem 2rem;
   box-sizing: border-box;
+  text-align: center;
 }
 .greeting-image img{
   width: 536px;

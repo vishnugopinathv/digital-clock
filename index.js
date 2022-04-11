@@ -27,7 +27,26 @@ if(minute<10){
 if(second<10){
     second="0"+second;
 }
-if((hour>=8 && hour<12) && (amorpm==="AM")){
+hours[0].innerText=hour;
+minutes[0].innerText=minute;
+seconds[0].innerText=second;
+am_pm[0].innerText=amorpm;
+}
+    const setAlarm=()=>{
+    let timing=document.getElementsByClassName("timing");
+    let wakeup=document.getElementById("wakeup");
+    let lunch=document.getElementById("lunch");
+    let tea=document.getElementById("tea");
+    let night=document.getElementById("night");
+    let time=new Date();
+    let hours=time.getHours();
+
+    timing[0].innerText=wakeup.options[wakeup.selectedIndex].text;
+    timing[1].innerText=lunch.options[lunch.selectedIndex].text;
+    timing[2].innerText=tea.options[tea.selectedIndex].text;
+    timing[3].innerText=night.options[night.selectedIndex].text;
+
+    if((hours===parseInt(wakeup.value))){
     let greeting=document.getElementById("goodmorning");
     let message=document.getElementById("greeting");
     let image=document.getElementById("greeting-image");
@@ -35,7 +54,8 @@ if((hour>=8 && hour<12) && (amorpm==="AM")){
     message.innerText="GRAB SOME HEALTHY BREAKFAST!!!"
     greeting.innerText="GOOD MORNING!! WAKEUP!!";
 }
-if(((hour>=12)|| (hour<4)) && (amorpm==="PM")){
+
+    if((hours===parseInt(lunch.value))){
     let greeting=document.getElementById("goodmorning");
     let message=document.getElementById("greeting");
     let image=document.getElementById("greeting-image");
@@ -43,7 +63,8 @@ if(((hour>=12)|| (hour<4)) && (amorpm==="PM")){
     message.innerText="LET'S HAVE SOME LUNCH !!"
     greeting.innerText="GOOD AFTERNOON !! TAKE SOME SLEEP";
 }
-if((hour>=4 && hour<8) && (amorpm==="PM")){
+
+    if((hours===parseInt(tea.value))){
     let greeting=document.getElementById("goodmorning");
     let message=document.getElementById("greeting");
     let image=document.getElementById("greeting-image");
@@ -51,25 +72,16 @@ if((hour>=4 && hour<8) && (amorpm==="PM")){
     message.innerText="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
     greeting.innerText="GOOD EVENING!!";
 }
-if((hour>=8 && hour<12) && (amorpm==="PM")){
-    let greeting=document.getElementById("goodmorning");
-    let message=document.getElementById("greeting");
-    let image=document.getElementById("greeting-image");
-    image.src="./night.png";
-    message.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
-    greeting.innerText="GOOD NIGHT!!";
+
+    if((hours===parseInt(night.value))){
+        let greeting=document.getElementById("goodmorning");
+        let message=document.getElementById("greeting");
+        let image=document.getElementById("greeting-image");
+        image.src="./night.png";
+        message.innerText="CLOSE YOUR EYES AND GO TO SLEEP"
+        greeting.innerText="GOOD NIGHT!!";
+    }
 }
-hours[0].innerText=hour;
-minutes[0].innerText=minute;
-seconds[0].innerText=second;
-am_pm[0].innerText=amorpm;
-}
-const setAlarm=()=>{
-    let timing=document.getElementsByClassName("timing");
-    timing[0].innerText=document.getElementById("wakeup").value;
-    timing[1].innerText=document.getElementById("lunch").value;
-    timing[2].innerText=document.getElementById("nap").value;
-    timing[3].innerText=document.getElementById("night").value;
-}
+
 clock();
 setInterval(clock,1000);
