@@ -32,6 +32,7 @@ minutes[0].innerText=minute;
 seconds[0].innerText=second;
 am_pm[0].innerText=amorpm;
 }
+
     const setAlarm=()=>{
     let timing=document.getElementsByClassName("timing");
     let wakeup=document.getElementById("wakeup");
