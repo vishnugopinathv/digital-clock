@@ -2,7 +2,7 @@
 const clock=()=>{
 let time= new Date();
 let amorpm="";
-let hour=time.getHours();
+let hour=16;
 let minute=time.getMinutes();
 let second=time.getSeconds();
 let hours=document.getElementsByClassName("hour");
@@ -10,14 +10,20 @@ let minutes=document.getElementsByClassName("minute");
 let seconds=document.getElementsByClassName("second");
 let am_pm=document.getElementsByClassName("am_pm");
 
+if(hour>=12){
+    amorpm="PM";
+}
+if(hour>=0&&hour<12){
+    amorpm="AM";
+}
 if(hour>12){
     hour=hour-12;
-    amorpm="PM";
 }
 if(hour==0){
     hour=12;
-    amorpm="AM";
 }
+
+    
 if(hour<10){
     hour="0"+hour;
 }
