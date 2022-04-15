@@ -2,7 +2,7 @@
 const clock=()=>{
 let time= new Date();
 let amorpm="";
-let hour=16;
+let hour=time.getHours();
 let minute=time.getMinutes();
 let second=time.getSeconds();
 let hours=document.getElementsByClassName("hour");
