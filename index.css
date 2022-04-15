@@ -52,7 +52,7 @@ main {
   width: 68rem;
 }
 .container {
-  margin: 2rem ;
+  margin: 2rem;
 }
 .digital-clock {
   position: relative;
@@ -70,7 +70,7 @@ main {
   position: relative;
   box-sizing: border-box;
 }
-.time::after{
+.time::after {
   content: ":";
   color: purple;
   font-size: 2.5rem;
@@ -78,7 +78,9 @@ main {
   top: 2.5rem;
   left: 5.5rem;
 }
-.time:nth-last-child(1)::after,.time:nth-last-child(2)::after,.dropdown:nth-last-child(1)::before{
+.time:nth-last-child(1)::after,
+.time:nth-last-child(2)::after,
+.dropdown:nth-last-child(1)::before {
   display: none;
 }
 .bg-3 p {
@@ -129,12 +131,11 @@ main {
   position: relative;
   display: flex;
   justify-content: space-between;
-  
 }
-.dropdown::before{
+.dropdown::before {
   position: absolute;
   content: "";
-  border-left: 2px solid rgb(128, 128, 128,0.45);
+  border-left: 2px solid rgb(128, 128, 128, 0.45);
   height: 30px;
   top: 3rem;
   left: 1.2rem;
@@ -187,22 +188,22 @@ label {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.set-alarm span:nth-child(2){
+.set-alarm span:nth-child(2) {
   display: none;
 }
-.set-alarm:hover span:nth-child(2){
+.set-alarm:hover span:nth-child(2) {
   display: inline-block;
 }
-.set-alarm:hover{
-  background:linear-gradient(
+.set-alarm:hover {
+  background: linear-gradient(
     to left,
     #6e54ec 0%,
     #cb52f8 40%,
     #fc5eff 81%,
     #f1a7c5 100%
-  );;
+  );
 }
-.set-alarm:hover span:nth-child(1){
+.set-alarm:hover span:nth-child(1) {
   display: none;
 }
 .timings {
@@ -230,96 +231,98 @@ label {
   background-color: white;
   border-radius: 10px;
   font-size: 1.9rem;
-  color: #8E53F0;
+  color: #8e53f0;
   padding: 2rem 2rem;
   box-sizing: border-box;
   text-align: center;
 }
-.greeting-image img{
+.greeting-image img {
   width: 536px;
   height: 341px;
   border-radius: 10px;
   display: inline-block;
   padding-top: 1rem;
 }
-.greeting-container{
-  padding:4rem 1rem;
+.greeting-container {
+  padding: 4rem 1rem;
 }
-.sub-container2{
+.sub-container2 {
   display: flex;
 }
 @media (max-width: 1184px) {
-  .sub-container1,.sub-container2 {
+  .sub-container1,
+  .sub-container2 {
     flex-direction: column;
   }
-  .sub-container1{
+  .sub-container1 {
     width: 536px;
   }
-  .timeset,.goodmorning,
-  .digital-clock{
+  .timeset,
+  .goodmorning,
+  .digital-clock {
     width: 536px;
     padding-bottom: 3rem;
   }
-  .timeset{
+  .timeset {
     margin-top: 2rem;
   }
-  .container{
+  .container {
     width: 100%;
-    max-width:560px;
+    max-width: 560px;
   }
-  .alarmtime{
+  .alarmtime {
     flex-direction: column;
   }
-  .set-alarm{
-    width:536px ;
+  .set-alarm {
+    width: 536px;
     height: 5rem;
     font-size: 2.5rem;
     padding: 1rem;
     margin: 1rem 0;
   }
-  .timings{
+  .timings {
     width: 536px;
     text-align: center;
   }
-  .greeting-container{
-    padding:1rem 0rem;
+  .greeting-container {
+    padding: 1rem 0rem;
   }
-  .greeting{
+  .greeting {
     text-align: center;
     font-size: 2.5rem;
     padding: 1rem;
   }
-  .goodmorning h1{
+  .goodmorning h1 {
     text-align: center;
     font-size: 2.75rem;
-    padding:1rem;
-  } 
-  .clock-logo img{
+    padding: 1rem;
+  }
+  .clock-logo img {
     width: 20rem;
   }
 }
-@media (max-width:650px){
-  .bg-3>p{
+@media (max-width: 650px) {
+  .bg-3 > p {
     display: none;
   }
-  .time{
+  .time {
     height: 130px;
     width: 120px;
     padding: 1.25rem;
     font-size: 1.5rem;
   }
-  .bg-3{
+  .bg-3 {
     gap: 2rem;
     height: 10rem;
     justify-content: space-between;
   }
-  .bg-2{
+  .bg-2 {
     top: 4rem;
   }
-  .bg-1{
+  .bg-1 {
     top: 5rem;
   }
-  .time::after{
+  .time::after {
     left: 6.75rem;
     top: 3.5rem;
   }
