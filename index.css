@@ -283,6 +283,8 @@ label {
   .timings {
     width: 536px;
     text-align: center;
+    font-size: 1.5rem;
+    height: 12rem;
   }
   .greeting-container {
     padding: 1rem 0rem;
